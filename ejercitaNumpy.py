@@ -1,0 +1,56 @@
+# Ejercitando Numpy 26052021
+import numpy as np
+# a=np.arange(6)
+# print(a)
+# a2=np.arange(0,11,2)
+# print(a2)
+# a3=a2[0:5,np.newaxis]
+# print(a3)
+# a=np.random.random((3,3))*10000//1000
+# print(a)
+# print(a[1][1])
+# print(np.zeros(2)*np.zeros(2)[:,np.newaxis])
+# print(np.zeros((2,2)))
+# empty=np.empty((2,2))
+# print(empty)
+# print(np.ones((1,2))-np.ones(2))
+# print(np.array([0,1,2,3,4,5])-np.arange(0,6))
+# a=np.arange(0,7)
+# b=np.arange(7,14)
+# print(a,b)
+# print(np.tile(np.arange(0, 5), 3).reshape(3,5))
+# array_example = np.array([[[0, 1, 2, 3],[4, 5, 6, 7]],[[0, 1, 2, 3],[4, 5, 6, 7]],[[0 ,1 ,2, 3],[4, 5, 6, 7]]])
+# print(array_example)
+# print(array_example.shape)
+# a = np.array([1, 2, 3, 4, 5, 6])
+# a2 = a[np.newaxis, :]
+# print(a)
+# print(a.shape)
+# print("")
+# print(a2)
+# print(a2.shape)
+# a3 = a[:,np.newaxis]
+# print(a)
+# print(a3)
+# b = np.expand_dims(a, axis=1)
+# print(b)
+
+a = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+b = np.nonzero(a < 5)
+print(b)
+listacoordenadas=list(zip(b[0], b[1]))
+print(listacoordenadas)
+print(listacoordenadas[3][1])
+
+x = np.arange(1, 25).reshape(2, 12)
+print(x)
+print("")
+h=np.hsplit(x, 3)
+print(h)
+print("")
+v=np.vsplit(x, 2)
+print(v)
+
+b1 = a[0:2,0:2]
+print(a)
+print(b1)
