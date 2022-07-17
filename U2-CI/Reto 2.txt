@@ -1,0 +1,32 @@
+def signo(dia_mes: dict):
+
+    if (dia_mes['dia'] < 0 or dia_mes['dia'] >32):
+        return ('Fecha incorrecta')
+    else:       
+        if (dia_mes['mes'] < 0 or dia_mes['mes'] > 13):
+            return ('Fecha incorrecta')
+        else:                                    
+            if (dia_mes['dia']>=21 and dia_mes['mes']==3) or (dia_mes['dia']<=20 and dia_mes['mes']==4):
+                return ('Aries')
+            elif (dia_mes['dia']>=24 and dia_mes['mes']==9) or (dia_mes['dia']<=23 and dia_mes['mes']==10):
+                return ('Libra')
+            elif (dia_mes['dia']>=21 and dia_mes['mes']==4) or (dia_mes['dia']<=21 and dia_mes['mes']==5):
+                return ('Tauro')
+            elif (dia_mes['dia']>=24 and dia_mes['mes']==10) or (dia_mes['dia']<=22 and dia_mes['mes']==11):
+                return ('Escorpio')
+            elif (dia_mes['dia']>=22 and dia_mes['mes']==5) or (dia_mes['dia']<=21 and dia_mes['mes']==6):
+                return ('geminis')
+            elif (dia_mes['dia']>=23 and dia_mes['mes']==11) or (dia_mes['dia']<=21 and dia_mes['mes']==12):
+                return ('Sagitario')
+            elif (dia_mes['dia']>=21 and dia_mes['mes']==6) or (dia_mes['dia']<=23 and dia_mes['mes']==7):
+                return ('Cancer')
+            elif (dia_mes['dia']>=22 and dia_mes['mes']==12) or (dia_mes['dia']<=20 and dia_mes['mes']==1):
+                return ('Capricornio')
+            elif (dia_mes['dia']>=24 and dia_mes['mes']==7) or (dia_mes['dia']<=23 and dia_mes['mes']==8):
+                return ('Leo')
+            elif (dia_mes['dia']>=21 and dia_mes['mes']==1) or (dia_mes['dia']<=19 and dia_mes['mes']==2):
+                return ('Acuario')
+            elif (dia_mes['dia']>=24 and dia_mes['mes']==8) or (dia_mes['dia']<=23 and dia_mes['mes']==9):
+                return ('Virgo')
+            elif (dia_mes['dia']>=20 and dia_mes['mes']==2) or (dia_mes['dia']<=20 and dia_mes['mes']==3):
+                return ('Piscis')
